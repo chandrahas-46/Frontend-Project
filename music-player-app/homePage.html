@@ -1,0 +1,1009 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Chandrahas mp</title>
+	<link rel="stylesheet" type="text/css" href="homePage_Styles.css">
+	<script src="https://kit.fontawesome.com/dafed025db.js" crossorigin="anonymous"></script>
+
+	
+
+</head>
+
+<body>
+
+	<!-- ......................Navigation bar......................... -->
+	<nav class="nav-bar">
+		<div class="nav-logo">
+            <img src="../images/mp/mp-logo.png">
+        </div>
+        <div class="nav-favourite">
+        	<h4>Favourites</h4>
+        </div>
+        <div class="nav-search">
+        	<div><i class="fas fa-search"></i></div>
+        	<div><input type="text" name="search" placeholder="Search"></div>
+        	<div><i class="fas fa-microphone"></i></div>
+        </div>
+        <div class="nav-notifications">
+        	<i class="fas fa-bell fa-2x"></i>
+        </div>
+        <div class="nav-profile">
+        	<img src="../images/profile.jpg">
+        </div>
+	</nav>
+
+	<!-- This div is divided into two section: 1)left-section (main section)	2) right-section (aside-section) -->
+	<div id="main-aside">
+		
+		<!-- ////////////////////////////////////// MAIN SECTION //////////////////////////////////////// -->
+		<main class="left-section">
+
+			<!-- Divided into: 
+				1) carousel	
+				2) Latest-Release	
+				3) Popular-Artist
+				4) Stations
+				5) Carousil
+				6) Latest-English
+				7) Latest-Hindi
+					 -->
+			<div class="carousel">
+                <div class="inner-carousel">
+                    <img src="../images/mp/cold-play.jpg">
+                    <img src="../images/mp/cold-play.jpg">
+                    <img src="../images/mp/cold-play.jpg">
+                </div>
+            </div>
+
+
+            <div class="latest-release">
+            	<h2>Latest Release</h2>
+
+            	<div class="outer-card">
+            		<div id="card1" class="card">
+            			<div class="card_image">
+            				<img src="../images/mp/music-station.jpg">
+            				<!-- play-button only visible on hover the image -->
+            				<div class="play-button">
+            					<!-- <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a> -->
+
+                                <a onclick="playAudio()">
+                                    <i class="fas fa-play"></i>
+                                </a>
+
+                                <!-- <a onclick="pauseAudio()">
+                                    <i class="fas fa-pause-circle"></i>
+                                </a> -->
+
+                                <!-- <button onclick="playAudio()" type="button">PLAY</button> -->
+                            </div>
+            			</div>
+            			<div class="card-description">
+                            <h3>
+                                onism
+                            </h3>
+                            <p>
+                                July , 2023
+                            </p>
+                        </div>
+
+                        <!-- ******** This effect will show on clicking 3 dots option ******* -->
+                        <div class="card-dropdown">
+                            <!-- <i class="fas fa-ellipsis-h"></i> -->
+                            <label for=""><i class="fas fa-ellipsis-h"></i>
+                            	
+                            </label>
+                            <input type="checkbox" class="dropdown-checkbox">
+                            
+
+                            <div class="dropdown-options">
+                                <div class="dropdown-item">
+                                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                    <p><i class="fas fa-play-circle"></i> <a href="Single_playlist_Screen.html"> &nbsp;&nbsp;Play Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-list-ul"></i> &nbsp;&nbsp;Add To Queue</p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-folder-plus"></i> &nbsp;&nbsp;Add To Favourites</p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-info-circle"></i> &nbsp;&nbsp;Get Info</p>
+                                </div>
+                            </div>
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+            		</div>
+
+            		<div id="card2" class="card">
+            			<div class="card_image">
+            				<img src="../images/mp/music-station.jpg">
+            				<div class="play-button">
+            					<a onclick="playAudio()">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+            			</div>
+            			<div class="card-description">
+                            <h3>
+                                onism
+                            </h3>
+                            <p>
+                                July , 2023
+                            </p>
+                        </div>
+
+                        <div class="card-dropdown">
+                            <!-- <i class="fas fa-ellipsis-h"></i> -->
+                            <label for=""><i class="fas fa-ellipsis-h"></i>
+                            	
+                            </label>
+                            <input type="checkbox" class="dropdown-checkbox">
+                            
+
+                            <div class="dropdown-options">
+                                <div class="dropdown-item">
+                                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                    <p><i class="fas fa-play-circle"></i> <a href="Single_playlist_Screen.html"> &nbsp;&nbsp;Play Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-list-ul"></i> &nbsp;&nbsp;Add To Queue</p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-folder-plus"></i> &nbsp;&nbsp;Add To Favourites</p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-info-circle"></i> &nbsp;&nbsp;Get Info</p>
+                                </div>
+                            </div>
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+
+            		</div>
+            	</div>
+
+            	<div class="outer-card">
+            		<div id="card3" class="card">
+            			<div class="card_image">
+            				<img src="../images/mp/music-station.jpg">
+            				<div class="play-button">
+            					<!-- <a href="Single playlist Screen.html">
+                                	<i class="fas fa-play"></i>
+                            	</a> -->
+                                <a onclick="playAudio()">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+            			</div>
+            			<div class="card-description">
+                            <h3>
+                                onism
+                            </h3>
+                            <p>
+                                July , 2023
+                            </p>
+                        </div>
+
+                        <div class="card-dropdown">
+                            <!-- <i class="fas fa-ellipsis-h"></i> -->
+                            <label for=""><i class="fas fa-ellipsis-h"></i>
+                            	
+                            </label>
+                            <input type="checkbox" class="dropdown-checkbox">
+                            <div class="dropdown-options">
+                                <div class="dropdown-item">
+                                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                    <p><i class="fas fa-play-circle"></i> <a href="Single_playlist_Screen.html">Play Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-list-ul"></i> Add To Queue</p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-folder-plus"></i> Add To Favourites</p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+            		</div>
+
+            		<div id="card4" class="card">
+            			<div class="card_image">
+            				<img src="../images/mp/music-station.jpg">
+            				<div class="play-button">
+            					<a onclick="playAudio()">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+            			</div>
+            			<div class="card-description">
+                            <h3>
+                                onism
+                            </h3>
+                            <p>
+                                July , 2023
+                            </p>
+                        </div>
+                        <div class="card-dropdown">
+                            <!-- <i class="fas fa-ellipsis-h"></i> -->
+                            <label for=""><i class="fas fa-ellipsis-h"></i>
+                            	
+                            </label>
+                            <input type="checkbox" class="dropdown-checkbox">
+                            <div class="dropdown-options">
+                                <div class="dropdown-item">
+                                    <!-- if user clicks on play now button, he/she will be taken to the inner playlist page -->
+                                    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+                                    <p><i class="fas fa-play-circle"></i> <a href="Single_playlist_Screen.html">Play Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-list-ul"></i> Add To Queue</p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-folder-plus"></i> Add To Favourites</p>
+                                </div>
+                                <hr>
+                                <div class="dropdown-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+
+            		</div>	<!-- card4 closing -->
+            	</div>
+            	
+            </div> 		<!-- latest-release closing -->
+
+
+
+            <!-- ////////////////////////////// POPULAR ARTIST //////////////////////////// -->
+
+            <div class="popular-artists">
+                <h2 style="margin-top: 6rem">
+                    Popular Artists
+                </h2>
+                <div class="popular-artist-content">
+                    <!-- if user clicks on artist image, he/she will be taken to the inner playlist page -->
+                    <a href="Single_playlist_Screen.html">
+                        <div>
+                            <img src="../images/mp/cold-play.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Ed Sheeran
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <a href="Single_Playlist_Screen.html">
+                        <div>
+                            <img src="../images/mp/cold-play.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Cold Play
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <a href="Single_Playlist_Screen.html">
+                        <div>
+                            <img src="../images/mp/cold-play.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Zayn
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <a href="Single_Playlist_Screen.html">
+                        <div>
+                            <img src="../images/mp/cold-play.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Charlie Puth
+                            </p>
+                        </div>
+                    </a>
+                    
+                    <a href="Single_Playlist_Screen.html">
+                        <div>
+                            <img src="../images/mp/cold-play.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Imagine Dragon
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="Single_Playlist_Screen.html">
+                        <div>
+                            <img src="../images/mp/cold-play.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>
+                                Bruno Mars
+                            </p>
+                        </div>
+                    </a>
+
+                </div>	<!-- popular-artist-content closing -->
+            </div> <!-- popular-artist closing -->
+
+
+
+            <!-- ////////////////////////// MUSIC STATIONS: Love, RETRO, CHILL etc /////////////////////// -->
+
+            <div class="music-station">
+
+                <div class="music-station-right">
+
+                	<!-- 3 rectangle overlapes -->
+	                <div class="stations">
+	                    <div id="square1">
+	                        <div id="square2">
+	                            <div id="square3">
+	                                <img src="../images/mp/music-station.jpg">
+	                                <div class="square3-content">Stations</div>
+	                                <!-- <p>Stations</p> -->
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+
+                    <div class="music-station-right-content">
+                        <img src="../images/social/hackerearth.png">
+                        <div class="music-station-right-image-content">Love</div>
+                    </div>
+                    <div class="music-station-right-content">
+                        <img src="../images/social/hackerearth.png">
+                        <div class="music-station-right-image-content">Retro</div>
+                    </div>
+                    <div class="music-station-right-content">
+                        <img src="../images/social/hackerearth.png">
+                        <div class="music-station-right-image-content">Chill</div>
+                    </div>
+                    <div class="music-station-right-content">
+                        <img src="../images/social/hackerearth.png">
+                        <div class="music-station-right-image-content">Workout</div>
+                    </div>
+                    <div class="music-station-right-content">
+                        <img src="../images/social/hackerearth.png">
+                        <div class="music-station-right-image-content">Rock</div>
+                    </div>
+                    <div class="music-station-right-content">
+                        <img src="../images/social/hackerearth.png">
+                        <div class="music-station-right-image-content">Pop</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ////////////////////////// MUSIC TYPE: Party, Electronic, Road Trip /////////////////////// -->
+
+            <div class="music-level">
+                <!-- 3 divs content -->
+                <div class="type">
+                    <div class="type-content">
+                    	<img src="../images/nav-background.jpg">
+                        <h2>party</h2>
+                    </div>
+                
+                    <div class="type-content">
+                    	<img src="../images/nav-background.jpg">
+                        <h2>Electronic</h2>
+                    </div>
+              
+               
+                    <div class="type-content">
+                    	<img src="../images/nav-background.jpg">
+                        <h2>Travel</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ////////////////////////// LATEST ENGLISH ///////////////////////// -->
+
+            <div class="latest-english-hindi">
+            	<h2 class="latest-english-hindi-heading">
+                    Latest English
+                </h2>
+
+                <div class="latest-english-hindi-content">
+                	<div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ////////////////////////// LATEST HINDI /////////////////////// -->
+
+            <div class="latest-english-hindi">
+            	<h2 class="latest-english-hindi-heading">
+                    Latest Hindi
+                </h2>
+
+                <div class="latest-english-hindi-content">
+                	<div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/mp/cold-play.jpg">
+                        <p>Onism</p>
+                        <p>Aug 11, 2017</p>
+                    </div>
+                </div>
+            </div>
+
+		</main>
+
+		
+		<!-- //////////////////////////////////// ASIDE QUEUE ///////////////////////////////////// -->
+
+
+		<!-- <div class="card-dropdown">
+	        <label for="dropdown-checkbox"><i class="fas fa-ellipsis-h"></i>
+	        	
+	        </label>
+	        <input type="checkbox" id="dropdown-checkbox">
+	    
+	    </div> -->
+
+
+
+		<aside class="right-section">
+            <div class="heading">
+                <h1>Queue</h1>
+
+            	<div class="dropdown-container-queue">
+            		<label class="dropdown-toggle-queue" for="dropdown-checkbox-queue">Queue<i class="fas fa-chevron-circle-down"></i></label>
+					<input type="checkbox" id="dropdown-checkbox-queue" class="dropdown-checkbox-queue">
+
+					<ul class="dropdown-menu-queue">
+				      <li>Playlists</li>
+				      <hr>
+				      <li>Favourite songs</li>
+				    </ul>
+            	</div>
+
+            </div>
+
+            
+            <!--................................ PLAYLIST ITEMS ................................... -->
+            <div class="playlist-item-outer">
+                <div class="playlist-item">
+                    <div class="left-part">
+                        <div>
+                            01
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                            	<a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            02
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            03
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            04
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            05
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            06
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            07
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            08
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            09
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            10
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            11
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+                <div class="playlist-item">
+                	<div class="left-part">
+                        <div>
+                            12
+                        </div>
+                        <div>
+                            <img src="../images/mp/music-station.jpg">
+                            <div class="aside-play-button">
+                                <a href="Single_playlist_Screen.html">
+                                	<i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlist-author">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <span>
+                                Else
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>		<!-- playlist-item ending -->
+
+            </div>
+        </aside>
+
+	</div>		<!-- main-aside closing -->
+
+
+
+	<!-- //////////////////////////////// FOOTER SECTION: For Active Song /////////////////////////////////// -->
+
+	<footer>
+		<!-- <div class="active-song-left-part">
+			<div class="active-song-image">
+                <img src="../images/mp/cold-play.jpg">
+            </div>
+
+            <div class="active-song-author">
+                <div>
+                    Imagine Dragon
+                </div>
+                <div>
+                    John Lennon
+                </div>
+            </div>
+
+            <div class="active-song-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+		</div> -->
+
+		<div class="active-song-center-part">
+			<!-- <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+
+            <div class="slider">
+                <div class="time">
+                    0:44
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider">
+                </div>
+                <div class="time">
+                    4:44
+                </div>
+            </div> -->
+
+            <div class="centerAud">
+                <!-- <audio controls id="myAudio">    
+                    <source src="images/audio.ogg" type="audio/ogg">
+                        <p> browser does not support Audio </p>
+                    <source src="images/audio.mp3" type="audio/mpeg">
+                        <p> browser does not support Audio </p>
+                </audio> -->
+                <iframe src="https://drive.google.com/file/d/1-Kpehv3Skb4oDwhEo7DFEiFNuwOp9g5H/preview" width="640" height="480" allow="autoplay"></iframe>
+            </div>
+
+		</div>
+
+		<!-- <div class="active-song-right-part">
+			<div>
+				<i class="fas fa-list-ul"></i>
+			</div>
+
+			<div>
+				<i class="fas fa-laptop"></i>
+			</div>
+
+			<div>
+				<i class="fas fa-volume-up"></i>
+			</div>
+
+			<div class="slidecontainer" style="width:30%;">
+				<input type="range" min="0" max="100" value="0" class="slider" style="margin-top:0px;">
+			</div>
+				
+			<div>
+				<i class="fas fa-expand-alt"></i>
+			</div>
+
+		</div> -->
+	</footer>
+
+    <script>
+        var x = document.getElementByTagName("iframe");
+
+        function playAudio() {
+            x.play();
+        }
+        // function pauseAudio() {
+        //     x.pause();
+        // }
+    </script>
+
+</body>
+</html>
